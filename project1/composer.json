@@ -1,0 +1,19 @@
+{
+    "name": "monorepo/project1",
+    "license":      "None",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../library"
+        }
+    ],
+    "require":      {
+        "symfony/http-kernel": "~3.0",
+        "monorepo/library": "@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "Monorepo\\": "src/php/"
+        }
+    }
+}
