@@ -1,7 +1,8 @@
 {
     "name": "monorepo/library",
     "require": {
-        "symfony/http-kernel": "~3.0"
+        "symfony/http-kernel": "~3.0",
+        "qafoo/ser-pretty": "@dev"
     },
     "autoload": {
         "psr-4": {

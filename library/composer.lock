@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f25b7664ce89a6d2735885858040fb69",
-    "content-hash": "2a07b1518cb65916169d216b1cc47946",
+    "hash": "2305d25e6e7b6a31112d35d62db5d51a",
+    "content-hash": "2c4fa2608ce81c7a47da696c6a05d49f",
     "packages": [
         {
             "name": "psr/log",
@@ -53,6 +53,43 @@
                 "psr-3"
             ],
             "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "qafoo/ser-pretty",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Qafoo/ser-pretty.git",
+                "reference": "29ea475e927f9a9ba0d1fb0820c8808412c1fb98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Qafoo/ser-pretty/zipball/29ea475e927f9a9ba0d1fb0820c8808412c1fb98",
+                "reference": "29ea475e927f9a9ba0d1fb0820c8808412c1fb98",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@stable"
+            },
+            "bin": [
+                "src/bin/ser-pretty"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Qafoo\\SerPretty": [
+                        "src/main",
+                        "test/phpunit"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Pretty print serialized PHP data",
+            "homepage": "https://github.com/Qafoo/ser-pretty",
+            "time": "2014-12-09 22:37:40"
         },
         {
             "name": "symfony/debug",
@@ -434,7 +471,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "qafoo/ser-pretty": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

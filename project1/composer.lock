@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bddd23a473090f2a3ea24c554be975b9",
-    "content-hash": "89447cae61e70d4bbe23e8215b866c0b",
+    "hash": "81d1efdc47c5fa69c80406f28278b906",
+    "content-hash": "05d0f75d43b6c44f8d5f8b94104b4bbe",
     "packages": [
         {
             "name": "monorepo/library",
@@ -13,10 +13,11 @@
             "dist": {
                 "type": "path",
                 "url": "../library",
-                "reference": "1e7d4be3a0c285d908da8366c6453f435844259c",
+                "reference": "e127e151482ec037f39705d66b03735c73ce90d0",
                 "shasum": null
             },
             "require": {
+                "qafoo/ser-pretty": "@dev",
                 "symfony/http-kernel": "~3.0"
             },
             "type": "library",
@@ -72,6 +73,43 @@
                 "psr-3"
             ],
             "time": "2016-10-10 12:19:37"
+        },
+        {
+            "name": "qafoo/ser-pretty",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Qafoo/ser-pretty.git",
+                "reference": "29ea475e927f9a9ba0d1fb0820c8808412c1fb98"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Qafoo/ser-pretty/zipball/29ea475e927f9a9ba0d1fb0820c8808412c1fb98",
+                "reference": "29ea475e927f9a9ba0d1fb0820c8808412c1fb98",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*@stable"
+            },
+            "bin": [
+                "src/bin/ser-pretty"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Qafoo\\SerPretty": [
+                        "src/main",
+                        "test/phpunit"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Pretty print serialized PHP data",
+            "homepage": "https://github.com/Qafoo/ser-pretty",
+            "time": "2014-12-09 22:37:40"
         },
         {
             "name": "symfony/debug",
@@ -452,11 +490,11 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": {
         "monorepo/library": 20
     },
-    "prefer-stable": false,
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
